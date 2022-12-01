@@ -14,8 +14,9 @@
 ### Description
 #### Painting Battle에 대한 전반적인 설명
 * 해당 프로젝트는 코랩에서 진행되었다.
-* cifar10 datasets을 이용하여 모델을 학습시켰다.
-* 그 모델이 플레이어가 그린 그림의 이미지를 예측한 결과를 점수로 반환하여 플레이어 간 점수를 겨루는 게임
+* Keras library 자제체에서 제공하는 CIFAR-10 datasets을 불러왔다.
+* CIFAR-10 datasets을 이용하여 모델을 학습시켰다.
+* 그 모델이 플레이어가 그린 그림에 대해 예측한 결과(퍼센트)를 점수로 반환하여 플레이어 간 점수를 겨루는 게임
 #### Painting Battle 플레이 방법
 1. 플레이 전 airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck 총 10가지 중 한가지 씩 선택하여 그린 그림을 이미지 파일로 저장한 후 각 이미지 파일의 경로를 코드에 입력  
 <img src="Description/p1_path.JPG" width="30%"> <img src="Description/p2_path.JPG" width="30%">
@@ -46,18 +47,18 @@
 
 ### Model
 * [kaggle에서 제공하는 cifar10 datasets](https://www.kaggle.com/datasets/oxcdcd/cifar10)을 CNN(Convoutional Neural Networks)을 이용하여 모델을 학습시킴
-* 모델 구성시, [정확도를 73% 갖는 오픈소스의 코드](https://www.kaggle.com/code/fahdseddik/cifar10-cnn-73)의 기본적인 model 및 layer 참조
-  * ImageDataGenerator를 통해 train 이미지 증강
-  * hidden layer 추가
-  * Dropuout, BatchNormalization 추가로 과적합 해결
+* 모델 구성시, [Keras CIFAR-10 CNN Source Code](https://bcdeep.tistory.com/6) - CNN 모델의 기본적인 구현 방식 참조 
+  * ImageDataGenerator -> train 이미지 수 증강
+  * hidden layer 추가 -> 정확도 증가
+  * Dropuout, BatchNormalization 추가 -> 과적합 해결
   * 높은 정확성을 가지도록 batch_size, epochs 값 설정
   <img src="Model/layer구성.JPG" width="40%"> 
 * Performace  
-정확도 약 80%를 가짐, 과적합 해결 <img src="Model/Epoch.JPG" width="100%">  <img src="Model/Test_Accuracy.JPG" width="80%"> 
+정확도 약 80%를 가짐, 정확도 증가 및 과적합 문제 해결 <img src="Model/Epoch.JPG" width="100%">  <img src="Model/Test_Accuracy.JPG" width="80%"> 
 <img src="Model/Accuracy_Trend.JPG" width="45%"> <img src="Model/Loss_Trend.JPG" width="45%">
 ---
 ### References
-* [정확도 73%를 갖는 오픈소스의 코드](https://www.kaggle.com/code/fahdseddik/cifar10-cnn-73) : model의 기본적인 layer 구성을 참조
+* [Keras CIFAR-10 CNN Source Code](https://bcdeep.tistory.com/6) : CNN모델에 맞게 데이터 전처리 방식, CNN모델 구성하는 방식 참조
 ---
 ### License
 * MIT License
