@@ -19,7 +19,7 @@
 #### Painting Battle 플레이 방법
 1. 플레이 전 airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck 총 10가지 중 한가지 씩 선택하여 그린 그림을 이미지 파일로 저장한 후 각 이미지 파일의 경로를 코드에 입력  
 <img src="Description/p1_path.JPG" width="30%"> <img src="Description/p2_path.JPG" width="30%">
-2. player1, player2가 각각 그린 그림의 주제에 대해 입력 ( 잘못된 입력이 왔을 경우 : 올바른 입력을 할 때까지 재입력 수행 )
+2. player1, player2가 각각 그린 그림의 주제에 대해 입력 ( 잘못된 입력이 왔을 경우 : 올바른 입력을 할 때까지 재입력 수행 )  
 <img src="Description/player1 입력.JPG" width="60%"> <img src="Description/player2 입력.JPG" width="60%">  <img src="Description/재입력.JPG" width="60%">  
 3. cifar10 datasets을 통해 학습한 모델이 플레이어 각각의 그림을 예측, 그 결과를 플레이어의 점수로 환산 후 게임의 승패가 결정!  
 **점수 환산 방법**  
