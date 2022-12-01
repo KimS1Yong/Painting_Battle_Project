@@ -1,8 +1,11 @@
 # Painting-Battle 
 ## 누구의 그림이 실제와 더 비슷할까?
+## <img src="%EB%B6%80%EC%A0%9C%EA%BE%B8%EB%AF%B8%EA%B8%B0.png" width="50%">
+
+
 ### Contents
 1. Description
-2. Example Result
+2. Result Example
 3. Model 
 4. References
 5. License
@@ -25,10 +28,11 @@
 그 후 플레이어가 그린 그림의 주제로 모델이 예측한 확률 * 100 을 추가 점수로 부여 (소수점 첫째자리에서 반올림 진행)  
 *ex) player1 자동차를 그림 -> 모델이 자동차로 예측함(+50점) + 약 68%의 정확성을 가짐(+68점) = 약118점*
 ---
-### Example Result
+### Result Example
 **Tip - 실제 이미지와 그림을 비교하므로 실사와 가까운 그림일수록 높은 점수를 얻음!**  
+*주의사항 - 각 그림에 대해 예측 결과는 수행마다 달라짐*
 * 각 player의 그림과 그 그림에 대한 예측 결과를 보여줌  
-* 게임의 승자와 플레이어 간의 점수 차를 보여줌
+* 게임의 승자와 플레이어 간의 점수 차를 보여줌  
 <br/>
 1. 두 명의 그림 모두 실제와 가까운 경우
 <img src="Result/result_ex3.JPG" width="50%"> 
