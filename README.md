@@ -6,6 +6,7 @@
 3. Model 
 4. References
 5. License
+6. Attachment Files
 ---
 ### Description
 #### Painting Battle에 대한 전반적인 설명
@@ -46,4 +47,10 @@ ex) player1 자동차를 그림 -> 모델이 자동차로 예측함 + 약 68%의
 * [정확도를 73% 갖는 오픈소스의 코드](https://www.kaggle.com/code/fahdseddik/cifar10-cnn-73) - model의 기본적인 layer 구성, 틀 등을 참조
 ---
 ### License
-MIT License
+* MIT License
+---
+### Attachment Files
+* Paintings - 플레이어들의 그림들이 들은 파일
+* Description - 사용자의 입력을 받는 상황들에 대한 캡쳐들이 들은 파일
+* Result - 실행한 예시 결과들이 들은 파일
+* Model - 모델 구조 및 성능에 대한 캡쳐 파일
