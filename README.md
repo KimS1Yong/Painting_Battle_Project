@@ -14,7 +14,7 @@
 ### Description
 #### Painting Battle에 대한 전반적인 설명
 * 해당 프로젝트는 코랩에서 진행되었다.
-* Keras library 자제체에서 제공하는 CIFAR-10 datasets을 불러왔다.
+* Keras library 자체에서 제공하는 CIFAR-10 datasets을 불러왔다.
 * CIFAR-10 datasets을 이용하여 모델을 학습시켰다.
 * 그 모델이 플레이어가 그린 그림에 대해 예측한 결과(퍼센트)를 점수로 반환하여 플레이어 간 점수를 겨루는 게임
 #### Painting Battle 플레이 방법
