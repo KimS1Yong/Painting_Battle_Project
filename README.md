@@ -57,7 +57,7 @@
 <img src="Model/Accuracy_Trend.JPG" width="45%"> <img src="Model/Loss_Trend.JPG" width="45%">
 ---
 ### References
-* [정확도를 73% 갖는 오픈소스의 코드](https://www.kaggle.com/code/fahdseddik/cifar10-cnn-73) - model의 기본적인 layer 구성, 틀 등을 참조
+* [정확도 73%를 갖는 오픈소스의 코드](https://www.kaggle.com/code/fahdseddik/cifar10-cnn-73) : model의 기본적인 layer 구성을 참조
 ---
 ### License
 * MIT License
