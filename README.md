@@ -14,15 +14,15 @@
 * 그 모델이 플레이어가 그린 그림의 이미지를 예측한 결과를 점수로 반환하여 플레이어 간 점수를 겨루는 게임
 #### Painting Battle 플레이 방법
 1. 플레이 전 airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck 총 10가지 중 한가지 씩 선택하여 그린 그림을 이미지 파일로 저장한 후 각 이미지 파일의 경로를 코드에 입력  
-<img src="p1_path.JPG" width="30%"> <img src="p2_path.JPG" width="30%">
+<img src="Description/p1_path.JPG" width="30%"> <img src="Description/p2_path.JPG" width="30%">
 2. player1, player2가 각각 그린 그림의 주제에 대해 입력 ( 잘못된 입력이 왔을 경우 : 올바른 입력을 할 때까지 재입력 수행 )
-<img width="60%" src="https://user-images.githubusercontent.com/113281522/205034685-a052b175-d1e3-4e40-95ff-5e2b914a0060.JPG"> <img width="60%" src="https://user-images.githubusercontent.com/113281522/205034692-272b68c5-8e08-4c4c-8c1a-16cbe55fc9ee.JPG"><img src="재입력.JPG" width="60%">  
+<img src="Description/player1 입력.JPG" width="60%"> <img src="Description/player2 입력.JPG" width="60%">  <img src="Description/재입력.JPG" width="60%">  
 3. cifar10 datasets을 통해 학습한 모델이 플레이어 각각의 그림을 예측, 그 결과를 플레이어의 점수로 환산 후, 게임의 결과가 나옴  
-**점수 환산 방법  
+**점수 환산 방법**  
 플레이어가 그린 그림의 주제와 모델이 가장 높은 확률로 예측한 그림의 주제가 일치하면 +50점  
 플레이거가 그린 그림의 주제와 모델이 가장 높은 확률로 예측한 그림의 주제가 불일치하면 +0점  
 그 후 플레이어가 그린 그림의 주제로 모델이 예측한 확률 * 100 을 추가 점수로 부여 (소수점 첫째자리에서 반올림 진행)  
-ex) player1 자동차를 그림 -> 모델이 자동차로 예측함 + 약 68%의 정확성을 가짐 = 약118점**
+ex) player1 자동차를 그림 -> 모델이 자동차로 예측함 + 약 68%의 정확성을 가짐 = 약118점
 ---
 ### Example Result
 
@@ -37,10 +37,10 @@ ex) player1 자동차를 그림 -> 모델이 자동차로 예측함 + 약 68%의
   * 정확도를 더 높이기 위하여 코드를 제작성
   * ImageDataGenerator를 통해 이미지를 증강
   * hidden layer 및 Dropout, BatchNormalization 추가
-  <img src="layer구성.JPG" width="40%"> 
+  <img src="Model/layer구성.JPG" width="40%"> 
 * Performace  
-정확도 약 80%를 가짐 <img src="Epoch.JPG" width="100%">  <img src="Test_Accuracy.JPG" width="80%"> 
-<img src="Accuracy_Trend.JPG" width="45%"> <img src="Loss_Trend.JPG" width="45%">
+정확도 약 80%를 가짐 <img src="Model/Epoch.JPG" width="100%">  <img src="Model/Test_Accuracy.JPG" width="80%"> 
+<img src="Model/Accuracy_Trend.JPG" width="45%"> <img src="Model/Loss_Trend.JPG" width="45%">
 ---
 ### References
 * [정확도를 73% 갖는 오픈소스의 코드](https://www.kaggle.com/code/fahdseddik/cifar10-cnn-73) - model의 기본적인 layer 구성, 틀 등을 참조
