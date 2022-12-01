@@ -29,10 +29,13 @@ ex) player1 자동차를 그림 -> 모델이 자동차로 예측함 + 약 68%의
 **Tip - 실제 이미지와 그림을 비교하므로 실사와 가까운 그림일수록 높은 점수를 얻음!**  
 * 각 player의 그림과 그 그림에 대한 예측 결과를 보여줌  
 * 게임의 승자와 플레이어 간의 점수 차를 보여줌
-1. 두 명의 그림 모두 실제와 가까운 경우  <img src="Result/result_ex3.JPG" width="40%"> 
-2. automobile, truck과 같이 비슷한 류끼리 혼동되는 경우  <img src="Result/result_ex2.JPG" width="40%">
-3. 플레이어가 의도한 그림과 모델이 다르게 예측한 경우 <img src="Result/result_ex1.JPG" width="40%">
- 
+<br/>
+1. 두 명의 그림 모두 실제와 가까운 경우
+<img src="Result/result_ex3.JPG" width="50%"> 
+2. automobile, truck과 같이 비슷한 류끼리 혼동되는 경우  
+<img src="Result/result_ex2.JPG" width="50%">
+3. 플레이어가 의도한 그림과 모델이 다르게 예측한 경우  
+<img src="Result/result_ex1.JPG" width="50%">
 ---
 ### Model
 * [kaggle에서 제공하는 cifar10 datasets](https://www.kaggle.com/datasets/oxcdcd/cifar10)을 CNN(Convoutional Neural Networks)을 이용하여 모델을 학습시킴
