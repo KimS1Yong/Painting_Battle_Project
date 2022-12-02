@@ -23,11 +23,14 @@
 2. player1, player2가 각각 그린 그림의 주제에 대해 입력 ( 잘못된 입력이 왔을 경우 : 올바른 입력을 할 때까지 재입력 수행 )  
 <img src="Description/player1 입력.JPG" width="60%"> <img src="Description/player2 입력.JPG" width="60%">  <img src="Description/재입력.JPG" width="60%">  
 3. cifar10 datasets을 통해 학습한 모델이 플레이어 각각의 그림을 예측, 그 결과를 플레이어의 점수로 환산 후 게임의 승패가 결정!  
-**점수 환산 방법**  
+
+#### 점수 환산 방법  
+
 플레이어가 그린 그림의 주제와 모델이 가장 높은 확률로 예측한 그림의 주제가 일치하면 +50점  
 플레이거가 그린 그림의 주제와 모델이 가장 높은 확률로 예측한 그림의 주제가 불일치하면 +0점  
 그 후 플레이어가 그린 그림의 주제로 모델이 예측한 확률 * 100 을 추가 점수로 부여 (소수점 첫째자리에서 반올림 진행)  
 *ex) player1 자동차를 그림 -> 모델이 자동차로 예측함(+50점) + 약 68%의 정확성을 가짐(+68점) = 약118점*
+
 ---
 ### Result Example
 **Tip - 실제 이미지와 그림을 비교하므로 실사와 가까운 그림일수록 높은 점수를 얻음!**  
@@ -54,7 +57,7 @@
   * 높은 정확성을 가지도록 batch_size, epochs 값 설정
   <img src="Model/layer구성.JPG" width="40%"> 
 * Performace  
-정확도 약 80%를 가짐, 정확도 증가 및 과적합 문제 해결 <img src="Model/Epoch.JPG" width="100%">  <img src="Model/Test_Accuracy.JPG" width="80%"> 
+정확도 약 80%를 가짐, 과적합 문제 해결 <img src="Model/Epoch.JPG" width="100%">  <img src="Model/Test_Accuracy.JPG" width="80%"> 
 <img src="Model/Accuracy_Trend.JPG" width="45%"> <img src="Model/Loss_Trend.JPG" width="45%">
 ---
 ### References
